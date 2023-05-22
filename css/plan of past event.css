@@ -1,0 +1,79 @@
+.destination .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(27rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+  gap: 1.5rem;
+}
+
+.destination .box-container .box {
+  border-radius: 1rem;
+  /* overflow: hidden; */
+  background: #222;
+}
+
+.destination .box-container .box:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.destination .box-container .box .image {
+  height: 20rem;
+  overflow: hidden;
+  width: 100%;
+}
+
+.destination .box-container .box .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.destination .box-container .box .content {
+  padding: 1rem;
+  text-align: center;
+}
+
+.destination .box-container .box .content h3,h4 {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.destination .box-container .box .content p {
+  padding: 1rem 0;
+  font-size: 1rem;
+  color: #aaa;
+  line-height: 2
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.destination .box-container .box .content a {
+  font-size: 1.7rem;
+  color: #29d9d5;
+}
+
+.destination .box-container .box .content a:hover i {
+  padding-left: 4rem;
+}
+
+.destination .box-container .box .content a i {
+  padding-right: .2rem;
+}
+
+/* .btn {
+	/* background-color: rgb(235, 175, 13); */
+	font-size: inherit;
+	font-weight: inherit;
+	transition: 0.4s;
+  align:left;
+}
+.btn:hover {
+	opacity: 0.7; */
+	/* background-color: rgba(235, 176, 13, 0.8); */
+/* } */
+
+
+
+/* -------review------ */

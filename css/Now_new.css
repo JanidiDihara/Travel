@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+html {
+	scroll-behavior: smooth;
+	/* scroll-padding-top: 6rem; */
+}
+
+body {
+	background-color: white;
+	/* background-color: #333; */
+}
+.video-container {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	min-height: 100vh;
+}
+/* ----------------------------------------------------------------------- */
+
+/* -- Video and Text ----------------------------------------------------- */
+#myVideo {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	z-index: -10;
+	object-fit: fill;
+}
+
+.text-overlay {
+	z-index: 9;
+	position: relative;
+	height: 100%;
+
+	background: rgba(0, 0, 0, 0.5);
+	color: #f1f1f1;
+
+}
+
+.text {
+	margin: 15% 5%;
+	position: absolute;
+
+}
+.text h2,
+.text h3 {
+	font-size: 5em;
+	font-weight: 800;
+	line-height: 1em;
+	text-transform: uppercase;
+}
+
+.text h3 {
+	font-size: 4em;
+}
+
+.text p {
+	font-size: 1.1em;
+	margin: 24px 0;
+	font-weight: 400;
+	max-width: 700px;
+}
+
+.text a {
+	display: inline-block;
+	background: #fff;
+	padding: 10px 30px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 500;
+	margin-top: 12px;
+	color: #111;
+	letter-spacing: 2px;
+	transition: 0.2s;
+}
+.text a:hover {
+	letter-spacing: 6px;
+	color: #03a9f4;
+}
+
+#example2 {
+	color: #f1f1f1;
+	box-sizing: border-box;
+	font-weight: 600;
+	padding: 30px;
+	border: 2px solid gray;
+	border-left: none;
+	border-right: none;
+	text-align: center;
+	margin: 12px 5%;
+
+
+
+	width: 100%;
+	display: flex;
+	gap: 36px;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	
+	margin: 1.5px;
+}
+.main .left {
+	flex: 0 1 30%;
+}
+
+.main .left img {
+	width: 100%;
+	/* height: 100vh; */
+	display: block;
+	object-fit: cover;
+	object-position: center;
+	border: 2px solid gray;
+}
+.right p {
+	font-size: 15px;
+	font-family: myFirstFont;
+}
+.main:hover {
+	color: #7a7a85;
+}
+
+/* ----------severice----- */
+
+.container {
+	display: flex;
+	flex: wrap;
+	justify-content: space-between;
+}
+.container .box {
+	position: relative;
+	width: 350px;
+	padding: 40px;
+	background: #fff;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+	border-radius: 4px;
+	margin: 20px;
+	box-sizing: border-box;
+	overflow: hidden;
+	text-align: center;
+}
+.container .box:before {
+	content: "";
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/* background: hsl(0, 6%, 50%); */
+	z-index: 2;
+	pointer-events: none;
+}
+.container .box .icon {
+	position: relative;
+	width: 80px;
+	height: 80px;
+	color: black;
+	background: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	border-radius: 50%;
+	font-size: 40px;
+	font-weight: 500;
+	transition: 1s;
+}
+
+.container .box:nth-child(1):hover .icon {
+	box-shadow: 0000 #b8b894;
+	background: white;
+}
+.container .box:nth-child(2):hover .icon {
+	box-shadow: 0000 #adad85;
+	background: white;
+}
+.container .box:nth-child(3):hover .icon {
+	box-shadow: 0000 #adad86;
+	background: white;
+}
+.container .box .content {
+	position: relative;
+	z-index: 1;
+	transition: 0.5s;
+}
+.container .box:hover .content {
+	color: #fff;
+}
+.container .box .content h3 {
+	font-size: 20px;
+	color: #bf8040;
+	margin: 10px 0;
+	padding: 0;
+}
+.container .box .content p {
+	margin: 0;
+	padding: 0;
+}
+.container .box .content p .a {
+	display: inline-block;
+	padding: 10px 20px;
+	background: #fff;
+	border-radius: 4px;
+	text-decoration: none;
+	color: #000;
+	font-weight: 400;
+	margin-top: 20px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 2);
+}
+/* .container .box .mySlides {display:none; */
+
+/* ------image---- */
+.ex1 {
+	width: 90%;
+	padding: 20px;
+	margin: 100px auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.box1 {
+	width: 250px;
+	margin: 0 10px;
+	box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
+	transition: 1s;
+}
+.box1 img {
+	display: block;
+	width: 100%;
+	border-radius: 6px;
+	float: left;
+	height: 100px;
+	object-fit: cover;
+}
+.box1:hover {
+	transform: scale(1.5);
+	z-index: 2;
+}
+
+/* ------3 destination--- */
+
+.destination {
+	margin: 0 20px;
+}
+
+.destination .box-container {
+	display: -ms-grid;
+	display: grid;
+	margin: 0 20px;
+	-ms-grid-columns: (minmax(25rem, 1fr)) [auto-fit];
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+	gap: 1.1rem;
+}
+
+.destination .box-container .box {
+	border-radius: 1rem;
+	/* overflow: hidden; */
+	background: #222;
+}
+
+.destination .box-container .box:hover img {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.destination .box-container .box .image {
+	height: 20rem;
+	overflow: hidden;
+	width: 100%;
+}
+
+.destination .box-container .box .image img {
+	height: 100%;
+	width: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+.destination .box-container .box .content {
+	padding: 1rem;
+	text-align: center;
+}
+
+.destination .box-container .box .content h3 {
+	font-size: 1rem;
+	color: #fff;
+}
+
+.destination .box-container .box .content p {
+	padding: 0.2rem 0;
+	font-size: 1rem;
+	color: #aaa;
+	line-height: 2;
+}
+
+.destination .box-container .box .content a {
+	font-size: 1.7rem;
+	color: #29d9d5;
+}
+
+.destination .box-container .box .content a:hover i {
+	padding-left: 4rem;
+}
+
+.destination .box-container .box .content a i {
+	padding-right: 0.2rem;
+}
+
+/* -----banner---- */
+.banner {
+	/* background: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 17, 17, 0.7)),
+	 to(rgba(17, 17, 17, 0.7))), url(../images/banner-bg.jpg) no-repeat; */
+	background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),
+		url(../japan/i.jpg) no-repeat;
+	background-size: cover;
+	C:\xampp\htdocs\WebProject-JD\japan\i.jpg
+	background-position: center;
+	padding: 3rem 2rem;
+	background-attachment: fixed;
+	text-align: center;
+}
+
+.banner .content span {
+	font-size: 2rem;
+	color: #29d9d5;
+}
+
+.banner .content h3 {
+	font-size: 4rem;
+	color: #fff;
+	margin-top: 1rem;
+}
+
+.banner .content p {
+	max-width: 60rem;
+	margin: 1rem auto;
+	font-size: 1.4rem;
+	color: #aaa;
+	line-height: 2;
+}

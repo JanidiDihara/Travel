@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title></title>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/Navigation.css" />
+  <link rel="stylesheet" href="css/Now_new.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+
+
+
+  <!-- -----------  Scripts ------------------------ -->
+  <!-- About Autoplay -->
+  <script defer>
+    setTimeout(aboutVisibility, 2000);
+    function aboutVisibility() {
+      const el = document.getElementById("About");
+      el.style.opacity = "1";
+      el.style.visibility = "visible";
+      el.scrollIntoView();
+    }
+  </script>
+
+</head>
+
+<body>
+
+  <!-- -------  Heading ------------------- -->
+  <header>
+    <img class="logo" src="japan/jani.png" />
+    <nav class="topnav">
+      <ul class="nav-links">
+        <!-- ------------ -->
+
+        <b>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="contact.html">Contact US</a></li>
+          <li><a href="gallery2.html">Gallery</a></li>
+          <!-- -------- -->
+          <div class="dropdown">
+            <li><a href="#">Event Plan</a></li>
+            <div class="dropdown-content">
+              <a href="This Month offer.html">This Month Offer</a>
+              <!-- <a href="#">Customer Reviews</a> -->
+              <a href="plan of past event.html">Plan of past events</a>
+
+            </div>
+          <button>
+            <a href="Book Now.html">Book Now</a>
+           </button>
+        </b>
+
+      </ul>
+    </nav>
+  </header>
+
+  <!-- -------  Video and Text ------------------- -->
+  <div class="video-container">
+    <video id="myVideo" src="photos/5.mp4" muted></video>
+    <video id="myVideo" src="photos/5.mp4" muted loop autoplay></video>
+
+    <div class="text-overlay">
+      <div class="text">
+        <h2>Never Stop To </h2>
+        <h3>Exploring The World</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
+          <button>
+            <a href="Book Now.html">EXPLORE</a>
+           </button>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- ------------- -->
+  <div class="container">
+    <div class="box">
+      <div class="icon"><img src="japan/26.png" alt="someone"></div>
+      <div class="content">
+        <h3>Transportation</h3>
+        <p>Transportation, the movement of goods and persons from place
+          to place and the various means by which such movement is accomplished. </p>
+        <!-- <a href="#">Read More..</a> -->
+      </div>
+    </div>
+    <div class="box">
+      <div class="icon"><img src="japan/27.png" alt="someone"></div>
+      <div class="content">
+        <h3>Food and Beverage</h3>
+        <p>Food and Beverage Services can be broadly defined as the process of preparing,
+          presenting and serving of food and beverages to the customers</p>
+        <!-- <a href="#">Read More..</a> -->
+      </div>
+    </div>
+    <div class="box">
+      <div class="icon"><img src="japan/28.png" alt="someone"></div>
+      <div class="content">
+        <h3>Accommodation</h3>
+        <p>Best Price Guarantee. No Reservation Costs. Direct Confirmation. Book Now.
+          Get Instant Confirmation. Read Real Guest Reviews. Save 10% with Genius.</p>
+  </div>
+  </div>
+</div>
+
+  <!-- ------destination---- -->
+
+  <section class="destination" id="destination">
+    <div class="box-container">
+      <div class="box" data-aos="fade-up" data-aos-delay="150">
+        <div class="image">
+          <img src="japan/des-1.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="box" data-aos="fade-up" data-aos-delay="300">
+        <div class="image">
+          <img src="japan/des-2.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="box" data-aos="fade-up" data-aos-delay="450">
+        <div class="image">
+          <img src="japan/des-3.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="box" data-aos="fade-up" data-aos-delay="600">
+        <div class="image">
+          <img src="japan/des-4.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="box" data-aos="fade-up" data-aos-delay="750">
+        <div class="image">
+          <img src="japan/des-9.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="box" data-aos="fade-up" data-aos-delay="900">
+        <div class="image">
+          <img src="japan/des-6.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="box" data-aos="fade-up" data-aos-delay="1150">
+              <div class="image">
+                  <img src="japan\des-7.jpg" alt="">
+              </div>
+          </div>
+
+      <div class="box" data-aos="fade-up" data-aos-delay="1300">
+              <div class="image">
+                  <img src="japan\des-8.jpg" alt="">
+              </div>
+          </div>
+
+    </div>
+
+  </section>
+
+  <!-- ---------- -->
+
+
+  <!-- -------  ABOUT ------------------- -->
+  <section id="About">
+    <div id="about-2 ">
+      <div class="content-box-lg">
+        <div class="container text-light bg-transparent">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="about-item text-center">
+                <i class="fa fa-book"></i>
+                <h3>MISSION</h3>
+                <hr>
+                <p> Excellence in service delivery by understanding the needs of the customers and ensuring we have
+                  the right people on board. We shall show we are reliable by being consistent in delivering what we
+                  promise. By being knowledgeable about our products, services and the travel industry. </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="about-item text-center">
+                <i class="fa fa-globe"></i>
+                <h3>VISION</h3>
+                <hr>
+                <p> Serving our customer, searching their entire satisfaction and providing touristic services of
+                  quality, committing to the social, cultural and environmental reality of our country. </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="about-item text-center">
+                <i class="fa fa-pencil"></i>
+                <h3>ACHIEVEMENTS</h3>
+                <hr>
+                <p> In fact, it's a major accomplishment. First, you have to organize your time so you can travel. You
+                  may have to deal with frowning or grousing family members who want you to visit them or want to
+                  visit you during the time you have chosen to leave.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+<!-- ---------- -->
+  <hr>
+
+  <div class="banner">
+
+    <div class="content" data-aos="zoom-in-up" data-aos-delay="300">
+      <span>start your adventures</span>
+      <h3>Let's Explore This World</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptatum praesentium amet quibusdam quam
+        officia suscipit odio.</p>
+
+  </div>
+
+  </div>
+
+  <!-- banner section ends -->
+
+  <!-- -------  FOOTER ------------------- -->
+  <footer>
+    <section class="footer">
+
+      <div class="box-container" id="Footer">
+
+        <div class="box">
+          <h3>ABOUT US</h3>
+          <img class="logo" src="japan/jani.png" />
+          <p>We are responsible for our customers to give better service in here!
+            Our team always forcusing on our clients and we are responsible for any kind of situation</p>
+        </div>
+
+        <div class="box">
+          <h3>QUICK LINKS</h3>
+          <a href="#">Home</a>
+          <a href="#Gallary">Gallary</a>
+          <a href="#Services">Services</a>
+          <a href="#">Contact</a>
+          <a href="#Footer">About</a>
+
+        </div>
+        <div class="box">
+          <h3>FOLLOW US</h3>
+          <a href="#">Facebook</a>
+          <a href="https://www.instagram.com/the_eventzy/" target="_blank">Instagram</a>
+          <a href="#">Twitter</a>
+          <a href="#">Linkedin</a>
+          <a href="#">Diharajanidi1999@gmail.com</a>
+
+        </div>
+
+      </div>
+      <div class="parallax"></div>
+      <h1 class="credit"> created by <span> Janidi Dihara</span> | all rights reserved! </h1>
+
+    </section>
+
+  </footer>
+
+
+</body>
+
+</html>
